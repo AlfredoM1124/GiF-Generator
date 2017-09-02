@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Gifenator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="assets/css/reset.css">
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+    </head>
+    <body style="background-color: #DE332F; opacity: 70;">
+    <!-- Navbar including Gif search bar and button -->
+        <div>
+        
+        <nav class="navbar navbar-inverse" style="border-radius: 0px;">
+
+            <div class="navbar-header">
+            
+            <div class="collapse navbar-collapse">
+                
+              <form class="navbar-form navbar-right">
+                <div class="form-group">
+                <!-- Allows the user to select a custom tag -->
+                  <input type="text" class="form-control" placeholder="Let the GIFs begin..." id="gif-search">
+                </div>
+                <!-- On click will Generate the input tag as gifs -->
+                <button type="button" class="btn btn-danger Generate">Generate!
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        </div>
+        <!-- End of Navbar -->
+        
+          <!--  Dynamically generate list of previously searched gifs-->
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="searched-tags">
+                    <!-- Gif tags appear here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Gifs will appear here -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="gif-section">
+                </div>
+            </div>
+        </div>
+        <!-- No more gifs -->
+
+    <!--  Javascript & Jquery -->   
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script src="assets/javascript/GIFgen.js"></script>
+        
+    </body>
+</html>
